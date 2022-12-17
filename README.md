@@ -12,7 +12,7 @@ O objetivo desse projeto era de praticar um pouco do básico do Javascript e de 
 Essa aplicação é extremamente simples. Ela apenas faz o cálculo da média final, seguindo a ponderação apresentada pela UNIVESP.
 <br>
 
-[![Netlify Status] (https://api.netlify.com/api/v1/badges/278e6236-a993-4f82-b865-c79980e810c9/deploy-status)](https://app.netlify.com/sites/calculaunivesp/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/278e6236-a993-4f82-b865-c79980e810c9/deploy-status)](https://app.netlify.com/sites/calculaunivesp/deploys)
 
 
 <br>

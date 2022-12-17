@@ -4,11 +4,7 @@ const calculaMedia = document.querySelector("#calculaMedia");
 // Onde o resultado será exibido na tela
 const resultado = document.querySelector(".resultado");
 
-
-
-calculaMedia.addEventListener("click", (e) => {
-    e.preventDefault()
-
+function mediaFinal() {
     // Notas das provas
     const n1 = parseFloat(document.getElementById("nota1").value) * 0.08;
     const n2 = parseFloat(document.getElementById("nota2").value) * 0.12;
@@ -21,6 +17,14 @@ calculaMedia.addEventListener("click", (e) => {
 
     const mediaAvaliativas = (n1 + n2 + n3 + n4 + n5 + n6 + n7) * 0.4
     const mediaFinal = +((mediaAvaliativas + prova).toFixed(2));
+    
+    return mediaFinal;
+}
+
+calculaMedia.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    mediaFinal();
 
     if (mediaFinal >= 5) {
         resultado.querySelector("span").innerHTML = `Sua média foi: ${mediaFinal} <br> Parabéns. Você Passou!`;

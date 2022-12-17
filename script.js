@@ -15,7 +15,7 @@ const n7 = parseFloat(document.getElementById("nota7").value) * 0.12;
 const prova = parseFloat(document.getElementById("notaProva").value) * 0.6;
 
 const mediaAvaliativas = (n1 + n2 + n3 + n4 + n5 + n6 + n7) * 0.4
-const mediaFinal = mediaAvaliativas + prova;
+const mediaFinal = +((mediaAvaliativas + prova).toFixed(2));
 
 calculaMedia.addEventListener("click", (e) => {
     e.preventDefault()

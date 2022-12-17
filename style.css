@@ -1,0 +1,107 @@
+:root{
+    /* Cores */
+    --color-main: #4848ff;
+    --color-second: #facada;
+    --lightbshadow: rgba(0,0,0,0.15);
+
+    /* Margens */
+    --mg-01: 0.5rem;
+    --mg-02: 1.0rem;
+    --mg-03: 1.5rem;
+    --mg-04: 2.0rem;
+    --mg-05: 4.0rem;
+
+    /* Fonte */
+    --font-size-small: 0.8rem;
+    --font-size-normal: 1.0rem;
+    --font-size-big: 1.5rem;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(var(--color-main) 0%, var(--color-second) 100%);
+    text-align: center;
+}
+main{
+    max-width: 720px;
+    min-height: 100vh;
+    width: 30rem;
+    position: relative;
+    border-radius: var(--mg-03);
+    padding: var(--mg-03) var(--mg-04);
+    background: white;
+    box-shadow: 0px 0.4rem 1rem var(--lightbshadow);
+    overflow: hidden;
+    margin: var(--mg-01);
+}
+h1{
+    font-size: var(--mg-03);
+}
+form,
+.nota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--mg-01);
+}
+h2{
+    margin-top: var(--mg-02);
+}
+#nota7,
+#notaProva{
+    margin-bottom: var(--mg-02);
+}
+label{
+    font-size: var(--font-size-small);
+    display: block;
+}
+input{
+    width: 8rem;
+    align-items: center;
+}
+.atividadesAvaliativas,
+.resultado{
+    box-shadow: 0px 0.3rem 1rem var(--lightbshadow);
+    border-radius: var(--mg-01);
+    background: linear-gradient(#e8f7e3 0%, #cfcff8 100%);
+    width: 25rem;
+}
+.resultado{
+    margin-top: var(--mg-02);
+    padding: 1rem;
+}
+.resultado span{
+    font-size: var(--font-size-big);
+}
+
+
+/* Botão */
+button{
+    width: 80%;
+    height: 60px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    margin-top: var(--mg-03);
+    outline: none;
+    transition: 0.5s ease-in-out;
+    background: var(--lightbshadow);
+    border: 2px solid #91C9FF;
+}
+.btn:hover {
+    transition: 0.5s ease-in-out;
+    background: transparent;
+    border: 2px solid var(--color-main);
+}

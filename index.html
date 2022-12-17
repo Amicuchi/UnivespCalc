@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#">
+    <title>Calculadora de média (Não Oficial) UNIVESP</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1>Caluladora de média final <br> (Não Oficial) da UNIVESP</h1>
+        <form>
+            <h2>Atividades Avaliativas</h2>
+            <div class="atividadesAvaliativas">
+                <div class="nota">
+                    <label for="nota1">Avaliativa da 1ª Semana</label>
+                    <input type="text" id="nota1" class="nota" value="" min="0" max="10">
+                </div>
+                <div class="nota">
+                    <label for="nota2">Avaliativa da 2ª Semana</label>
+                    <input type="text" id="nota2" class="nota" value="" min="0" max="10">
+                </div>
+                <div class="nota">
+                    <label for="nota3">Avaliativa da 3ª Semana</label>
+                    <input type="text" id="nota3" class="nota" value="" min="0" max="10">
+                </div>
+                <div class="nota">
+                    <label for="nota4">Avaliativa da 4ª Semana</label>
+                    <input type="text" id="nota4" class="nota" value="" min="0" max="10">
+                </div>
+                <div class="nota">
+                    <label for="nota5">Avaliativa da 5ª Semana</label>
+                    <input type="text" id="nota5" class="nota" value="" min="0" max="10">
+                </div>
+                <div class="nota">
+                    <label for="nota6">Avaliativa da 6ª Semana</label>
+                    <input type="text" id="nota6" class="nota" value="" min="0" max="10">
+                </div>
+                <div class="nota">
+                    <label for="nota7">Avaliativa da 7ª Semana</label>
+                    <input type="text" id="nota7" class="nota" value="" min="0" max="10">
+                </div>
+            </div>
+
+            <h2>Prova</h2>
+            <div class="atividadesAvaliativas">
+                <div class="nota">
+                    <label for="notaProva">Nota da Prova</label>
+                    <input type="text" id="notaProva" class="nota" value="" min="0" max="10">
+                </div>
+            </div>
+
+            <button id="calculaMedia" class="btn">
+                <span>Calcular Média</span>
+            </button>
+        </form>
+
+        <div class="resultado">
+            <span>E aí? Bora ver se passou?</span>
+        </div>
+
+    </main>
+
+    <!-- <footer>
+        A ideia é colocar uma barra de navegação, com opções de:
+         - Sobre a aplicação
+         - Contato para sugestões e dúvidas
+         - Me pague um café
+    </footer> -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
